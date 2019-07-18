@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+   <body>
+
+         <form action = "{{ url_for('index') }}" enctype=multipart/form-data method = "POST">
+            <p><input type = "submit" value = "Add"></p>
+         </form>
+         <form action = "{{ url_for('delete_direct') }}" enctype=multipart/form-data method = "POST">
+            <p><input type = "submit" value = "Delete"></p>
+         </form>
+         <form action = "{{ url_for('update_direct') }}" enctype=multipart/form-data method = "POST">
+            <p><input type = "submit" value = "Update"></p>
+         </form>
+
+
+      <table>
+            <tr>
+               <th>Name</th>
+               <th>Address</th>
+            </tr>
+         {% for x in result%}
+            <tr>
+               <td> {{ x[0] }} </td>
+               <td> {{ x[1] }} </td>
+            </tr>
+         {% endfor %}
+      </table>
+   </body>
+</html>
