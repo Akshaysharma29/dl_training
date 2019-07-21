@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<head>
+    <title>Python App(CRUD)</title>
+</head>
+<body>
+    <div>
+            <h1>
+                Update
+            </h1>
+    </div>
+      <form action = "{{ url_for('update') }}" enctype=multipart/form-data method = "POST">
+         <p><input style="display: none;" type = "text" name = "Empid" value={{ans[0]}} placeholder="Empid"/></p>
+         <p><input style="display: none;" type = "text" name = "Name" value={{ans[1]}} placeholder="Name"/></p>
+         <p><input style="display: none;" type = "text" name ="Physics" value={{ans[2]}} placeholder="Address"></p>
+         <p>Update Name :<input type="text" name= "Replacen" value={{ans[1]}} placeholder="Replace name"></p>
+         <p>Update Address :<input type="text" name="Replacea" value={{ans[2]}} placeholder="Replace Address"></p>
+         <p><input onclick="update()" type = "submit" value = "Update" /></p>
+      </form>
+
+      <script>
+            function update() {
+               alert("your record will be update");
+            }
+        </script>
+</body>
+
+</html>

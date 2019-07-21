@@ -1,0 +1,9 @@
+1)	Read good URI formatting in REST api and follow it in assignment
+2)	Improve variable names.(no temp)
+3)	Create different file for CRUD operation(database_util.py).
+ only routes should be in app.py
+4)	Maintain unique id in database.
+ Do CRUD operation using that unique id. Add update, delete buttons
+ for that id(Don’t ask user every details of instance every time.)
+5)	Return updates to html page and notify user of updates in database. 
+ Don’t print it in console.
